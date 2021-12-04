@@ -2,23 +2,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 4rem;
 
-  // width: 100vw;
+  &__title {
+    font-size: 3.4rem;
+    margin-bottom: 2rem;
+  }
 
   &__level {
     display: flex;
     justify-content: space-around;
     width: 80vw;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 
     &--btn {
       cursor: pointer;
       text-transform: uppercase;
-      padding: 15px 30px;
+      padding: 1.5rem 3rem;
       border: none;
       border-radius: 5px;
 
-      font-size: 25px;
+      font-size: 2.5rem;
       color: #f0f0f0;
       background-color: #4d9078;
     }
@@ -35,7 +39,7 @@
   }
 
   &__img {
-    height: 200px;
+    height: 20rem;
     border-radius: 5px;
     cursor: pointer;
   }
