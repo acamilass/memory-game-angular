@@ -1,8 +1,22 @@
 <div class="game">
+  <h1>Jogo da memória</h1>
+
   <div class="game__level">
-    <p (click)="selectLevel('easy')">fácil</p>
-    <p (click)="selectLevel('medium')">médio</p>
-    <p (click)="selectLevel('hard')">difícil</p>
+    <button
+      type="button"
+      (click)="selectLevel('easy')"
+      class="game__level--btn"
+      >fácil</button>
+    <button
+      type="button"
+      (click)="selectLevel('medium')"
+      class="game__level--btn"
+    >médio</button>
+    <button
+      type="button"
+      (click)="selectLevel('hard')"
+      class="game__level--btn"
+    >difícil</button>
   </div>
   <div class="game__grid" >
     <img

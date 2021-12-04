@@ -1,18 +1,33 @@
 .game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // width: 100vw;
 
   &__level {
     display: flex;
     justify-content: space-around;
+    width: 80vw;
+    margin-bottom: 20px;
 
-    p {
+    &--btn {
       cursor: pointer;
+      text-transform: uppercase;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+
+      font-size: 25px;
+      color: #f0f0f0;
+      background-color: #4d9078;
     }
   }
 
 
   &__grid {
-    width: 700px;
-    height: 450px;
+    width: 80vw;
+    height: 60vw;
 
     display: flex;
     flex-wrap: wrap;
