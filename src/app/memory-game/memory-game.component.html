@@ -1,1 +1,14 @@
-<p>memory-game works!</p>
+<div class="game">
+  <div class="game__level">
+    <p (click)="selectLevel('easy')">fácil</p>
+    <p (click)="selectLevel('medium')">médio</p>
+    <p (click)="selectLevel('hard')">difícil</p>
+  </div>
+  <div class="game__grid" >
+    <img
+      *ngFor="let card of cardsArr"
+      class="game__img"
+      src="{{ card }}"
+      alt="Cartão do jogo da memória">
+  </div>
+</div>

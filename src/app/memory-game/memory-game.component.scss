@@ -1,0 +1,27 @@
+.game {
+
+  &__level {
+    display: flex;
+    justify-content: space-around;
+
+    p {
+      cursor: pointer;
+    }
+  }
+
+
+  &__grid {
+    width: 700px;
+    height: 450px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  &__img {
+    height: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
