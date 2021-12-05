@@ -30,32 +30,30 @@
 
 
   &__grid {
-    width: 80vw;
+    width: 69vw;
     height: 70rem;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 
   }
 
   &__card {
     cursor: pointer;
-    position: relative;
-
-    margin-right: 30rem;
 
     &--side {
-      position: absolute;
-      top: 0;
-      left: 0;
-
       transition: all .8s ease;
       backface-visibility: hidden;
       overflow: hidden;
     }
 
+    &--front, &--back {
+      position: relative;
+    }
+
     &--back {
+      margin-top: -20.2rem;
       transform: rotateY(180deg);
     }
 
