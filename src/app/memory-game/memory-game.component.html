@@ -18,11 +18,26 @@
       class="game__level--btn"
     >difícil</button>
   </div>
-  <div class="game__grid" >
-    <img
+  <div class="game__grid">
+    <div
+      class="game__card"
       *ngFor="let card of cardsArr"
-      class="game__img"
-      src="{{ card }}"
-      alt="Cartão do jogo da memória">
+      (click)="flipCard()">
+
+      <div class="game__card--side game__card--front" id="game__card--front">
+        <img
+          class="game__card--img"
+          src="../../assets/card-front.png"
+          alt="Cartão do jogo da memória">
+      </div>
+
+      <div class="game__card--side game__card--back" id="game__card--back">
+        <img
+          class="game__card--img"
+          src="{{ card }}"
+          alt="Cartão do jogo da memória">
+      </div>
+
+    </div>
   </div>
 </div>

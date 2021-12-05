@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem;
+  padding: 4rem 0;
 
   &__title {
     font-size: 3.4rem;
@@ -31,16 +31,39 @@
 
   &__grid {
     width: 80vw;
-    height: 60vw;
+    height: 70rem;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+
   }
 
-  &__img {
-    height: 20rem;
-    border-radius: 5px;
+  &__card {
     cursor: pointer;
+    position: relative;
+
+    margin-right: 30rem;
+
+    &--side {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      transition: all .8s ease;
+      backface-visibility: hidden;
+      overflow: hidden;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+    }
+
+    &--img {
+      height: 20rem;
+      border-radius: 5px;
+    }
+
   }
+
 }

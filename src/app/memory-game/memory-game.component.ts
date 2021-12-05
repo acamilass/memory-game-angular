@@ -21,7 +21,7 @@ export class MemoryGameComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
+    this.cardsArr = this.createNewArray(2);
   }
 
   shuffle(newArray: Array<string>): Array<string> {
@@ -62,6 +62,12 @@ export class MemoryGameComponent implements OnInit {
     }
 
     return this.shuffle(newArray);
+  }
+
+  flipCard() {
+    console.log('Flip card');
+    document.getElementById('game__card--front').style.transform = 'rotateY(-180deg)';
+    document.getElementById('game__card--back').style.transform = 'rotateY(0deg)';
   }
 
 }
